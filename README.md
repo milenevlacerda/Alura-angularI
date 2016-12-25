@@ -31,6 +31,7 @@
 * Diretivas reutilizáveis devem possuir escopo isolado
 * Mecanismo de transclusão
 
+
 ### Aula 05
 -------------------------------------------------
 * A diretiva ng-model e two-way data binding
@@ -38,3 +39,15 @@
 * ng-model-options e postergação do two-way data binding
 * Animações com o módulo ngAnimate
 * Animações requerem conhecimento sólido de CSS3
+
+
+### Aula 06
+-------------------------------------------------
+
+* Criação de parciais
+* A diretiva ng-view
+* O módulo ngRoute
+* $routeProvider e configurações de rota
+* Rota padrão
+* Hash
+* $LocationProvider e html5Mode
