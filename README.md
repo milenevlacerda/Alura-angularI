@@ -73,3 +73,11 @@
 * $routeParams e acesso a parâmetros
 * Alteração de recurso com $http.put
 * Único formulário para inclusão e alteração
+
+
+### Aula 09
+--------------------------------------------------
+* Criar uma combobox com Angular
+* O papel da diretiva ng-options
+* Transformação com filtros (ex. uppercase)
+* A diferença entre @ e & em diretivas
