@@ -30,3 +30,11 @@
 * Criar nossas própria diretivas
 * Diretivas reutilizáveis devem possuir escopo isolado
 * Mecanismo de transclusão
+
+### Aula 05
+-------------------------------------------------
+* A diretiva ng-model e two-way data binding
+* Aplicação de filtro na diretiva ng-repeat
+* ng-model-options e postergação do two-way data binding
+* Animações com o módulo ngAnimate
+* Animações requerem conhecimento sólido de CSS3
