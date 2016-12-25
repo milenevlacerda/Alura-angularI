@@ -51,3 +51,14 @@
 * Rota padrão
 * Hash
 * $LocationProvider e html5Mode
+
+
+### Aula 07
+-------------------------------------------------
+
+* Navegação entre views
+* A diretiva ng-submit e a interface de eventos do Angular
+* Executar uma ação no controller através de ações do usuário
+* Validação de formulário com Angular
+* Envio de dados para o servidor com $http.post
+* Mensagens de aviso para o usuário
