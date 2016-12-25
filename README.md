@@ -62,3 +62,14 @@
 * Validação de formulário com Angular
 * Envio de dados para o servidor com $http.post
 * Mensagens de aviso para o usuário
+
+
+### Aula 08
+--------------------------------------------------
+* A diretiva ng-click
+* Deleção de recurso com $http.delete
+* O truque com a função splice para evitar uma nova requisição
+* Rotas do Angular com curingas (parametrizadas)
+* $routeParams e acesso a parâmetros
+* Alteração de recurso com $http.put
+* Único formulário para inclusão e alteração
