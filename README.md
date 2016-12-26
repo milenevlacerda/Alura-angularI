@@ -103,3 +103,32 @@
 * Observar mudanças em propriedades através de $watchers
 * O modificador =
 * Barramento de eventos do Angular
+
+
+### Driblando a minificação
+---------------------------------------------------
+O processo de minificação altera o nome dos parâmetros das funções. Não há problema algum nisso, contanto que o novo nome seja trocado em todos os lugares em que é usado, porém o sistema de injeção de dependências do Angular é baseado no nome dos parâmetros. A conclusão disso é que nada mais funcionará no Angular após a minificação, já que os parâmetros das funções serão trocados por outros nomes aleatórios e menores que não tem nada a ver.
+
+Para isso usamos o
+> annotation system
+
+Ele permite dizer o que deve ser injetado para cada parâmetro do controller, mesmo que seu nome seja trocado. Ex:
+
+
+Este controller:
+
+```
+angular.module('alurapic')
+    .controller('FotoController', function($scope, recursoFoto, $routeParams, cadastroDeFotos) {
+            // código omitido
+});
+```
+
+Vira:
+
+```
+angular.module('alurapic')
+    .controller('FotoController', ['$scope', 'recursoFoto', '$routeParams', 'cadastroDeFotos', function($scope, recursoFoto, $routeParams, cadastroDeFotos) {
+            // código omitido
+    }]);
+```
