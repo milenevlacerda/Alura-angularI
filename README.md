@@ -81,3 +81,11 @@
 * O papel da diretiva ng-options
 * Transformação com filtros (ex. uppercase)
 * A diferença entre @ e & em diretivas
+
+
+### Aula 10
+--------------------------------------------------
+* O problema de URL's espalhadas
+* $resource para consumir endpoints REST
+* Criar nossa própria função em $resource
+* Criar nosso próprio serviço
