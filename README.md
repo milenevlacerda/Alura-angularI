@@ -89,3 +89,9 @@
 * $resource para consumir endpoints REST
 * Criar nossa própria função em $resource
 * Criar nosso próprio serviço
+
+
+### Aula 11
+--------------------------------------------------
+* Organizar lógicas reutilizáveis em serviços
+* Criar serviços que retornam promises
