@@ -1,51 +1,73 @@
 angular.module( 'minhasDiretivas', [] )
-    .directive( 'meuPainel', function() {
+.directive( 'meuPainel', function() {
 
-        var ddo = {};
+    var ddo = {};
 
-        ddo.restrict = "AE"; // attribute - element
+    ddo.restrict = "AE"; // attribute - element
 
-        ddo.scope = {
-            titulo: '@'
-        };
+    ddo.scope = {
+        titulo: '@'
+    };
 
-        ddo.transclude = true;
+    ddo.transclude = true;
 
-        ddo.templateUrl = 'js/directives/meu-painel.html';
+    ddo.templateUrl = 'js/directives/meu-painel.html';
 
 
-        return ddo;
+    return ddo;
 
-    })
-    .directive( 'minhaFoto', function() {
+})
+.directive( 'minhaFoto', function() {
 
-        var ddo = {};
+    var ddo = {};
 
-        ddo.restrict = "AE";
+    ddo.restrict = "AE";
 
-        ddo.scope = {
-            titulo: '@',
-            url: '@'
-        };
+    ddo.scope = {
+        titulo: '@',
+        url: '@'
+    };
 
-        ddo.template = '<img class="img-responsive center-block" src="{{url}}" alt="{{titulo}}">';
+    ddo.template = '<img class="img-responsive center-block" src="{{url}}" alt="{{titulo}}">';
 
-        return ddo;
+    return ddo;
 
-    })
-    .directive( 'meuBotaoPerigo', function() {
+})
+.directive( 'meuBotaoPerigo', function() {
 
-        var ddo = {};
+    var ddo = {};
 
-        ddo.restrict = "E";
+    ddo.restrict = "E";
 
-        ddo.scope = {
-            nome: '@',
-            acao: '&'
-        };
+    ddo.scope = {
+        nome: '@',
+        acao: '&'
+    };
 
-        ddo.template = '<button type="button" name="button" class="btn btn-danger btn-block" ng-click="acao( foto )">{{ nome }}</button>';
+    ddo.template = '<button type="button" name="button" class="btn btn-danger btn-block" ng-click="acao( foto )">{{ nome }}</button>';
 
-        return ddo;
+    return ddo;
 
-    });
+})
+.directive( 'meuFocus', function() {
+
+    var ddo = {};
+
+    ddo.restrict = "A";
+
+    ddo.scope = {
+        focado: '='
+    };
+
+    ddo.link = function( scope, element ) {
+        scope.$watch( 'focado', function() {
+            if( scope.focado ) {
+                element[0].focus();
+                scope.focado = false;
+            }
+        });
+    };
+
+    return ddo;
+
+});
