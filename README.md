@@ -95,3 +95,11 @@
 --------------------------------------------------
 * Organizar lógicas reutilizáveis em serviços
 * Criar serviços que retornam promises
+
+
+### Aula 12
+--------------------------------------------------
+* Manipulação de DOM em diretivas
+* Observar mudanças em propriedades através de $watchers
+* O modificador =
+* Barramento de eventos do Angular

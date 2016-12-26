@@ -23,8 +23,6 @@ angular.module( 'alurapic' ).controller( 'FotoController', function( $scope, cad
                 if( dados.inclusao ) {
                     $scope.fotos = {};
                 }
-
-                $scope.focado = true;
             })
             .catch( function( erro ) {
                 $scope.mensagem = erro.mensagem;
